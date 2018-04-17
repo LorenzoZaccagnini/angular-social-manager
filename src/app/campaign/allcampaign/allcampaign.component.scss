@@ -1,0 +1,104 @@
+.campaign-wrapper {
+  border-radius: 10px;
+  float: left;
+  width: calc(33.33333% - 30px);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  .campaign-details {
+    float: left;
+    padding: 45px 20px 20px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+
+    .campaign-details-column {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+
+      .campaign-detail:last-child {
+        border: 0;
+        display: block;
+      }
+
+      .campaign-detail {
+        color: #60656c;
+        width: calc(33.333333%);
+        border-right: 1px solid #e5e5e5;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+
+        .view-more-campaign {
+          font-size: 12px;
+          float: right;
+          padding: 0;
+        }
+
+        .button-custom-2 {
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          padding: 0 25px;
+          background-color: #008EE6;
+          color: #fff;
+          font-size: 13px;
+          border-radius: 5px;
+          float: left;
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .campaign-title {
+      width: 100%;
+      padding-bottom: 18px;
+      float: left;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 17px;
+          color: #60656c;
+    }
+  }
+
+  .campaign-banner {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 200px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .campaign-actor {
+      width: calc(100% - 30px);
+      position: absolute;
+      bottom: -30px;
+      left: 20px;
+    }
+
+    .campaign-actor-image {
+      float: left;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: rgba(0,0,0,.05);
+      margin-right: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 30px rgba(0,0,0,.2);
+    }
+
+    .campaign-actor-name {
+      color: #008ee6;
+      font-weight: 800;
+      position: relative;
+      top: 35px;
+    }
+  }
+}

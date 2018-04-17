@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="left_menu">
+    <div class="menu_item" *ngFor="let item of menuTree">
+      <div  (click)="itemSelected = item.title">
+          <i class="fas {{item.icon}}" style="color: #008EE6" ></i>
+        <span class="menu_item_title">
+          <b>{{item.title}}</b>
+          </span>
+          <div style="float: right" *ngIf="item.sub.length >= 1">
+              <i class="fas" [ngClass]="{'fa-caret-right': itemSelected != item.title, 'fa-caret-down': itemSelected === item.title}"></i>
+            </div>
+      </div>
+
+      <div class="sub_container" *ngIf="itemSelected === item.title">
+        <div class="menu_sub" *ngFor="let sub of item.sub"
+        [ngClass]="{'menu_sub_selected': sub.slug == itemSelected, 'menu_sub_unselected': sub.slug != itemSelected}">
+          <div (click)="goTo(sub.slug)">{{sub.title}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

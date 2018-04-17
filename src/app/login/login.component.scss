@@ -1,0 +1,95 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(12, 169, 221);
+    .login_box{
+        padding: 50px;
+        width: 340px;
+
+        .login_box_top {
+            border-radius: 3px 3px 0 0;
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #f2f2f2;
+
+            .top_ico{
+                width: 80px;
+                height: 80px;
+                margin: -60px auto 10px auto;
+                border-radius: 50px;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(./logo_zoocom_login.png);
+            }
+
+            .top_title{
+                font-size: 28px;
+                color: #2b3040;
+            }
+
+            .top_sub_title{
+                font-style: italic;
+                font-size: 16px;
+                color: #2b3040;
+                margin-bottom: 20px;
+            }
+        }
+
+        .login_box_bottom{
+            border-radius: 0 0 3px 3px;
+            margin: 0 auto;
+            width: 340px;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+
+            div {
+                text-align: center;
+                font-size: 14px;
+                color: #0ca9dd;
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+        }
+
+        input[type="text"], input[type="password"] {
+            margin-top: 30px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-left: 5%;
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #f2f2f2;
+            border: 0;
+        }
+
+        input[type="button"] {
+            cursor: pointer;
+            margin-left: 5%;
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #0ca9dd;
+            color: #fff;
+            margin-top: 30px;
+            text-align: center;
+            border: 0;
+            font-size: 16px;
+            text-transform: uppercase;
+
+
+
+
+        }
+    }
+}

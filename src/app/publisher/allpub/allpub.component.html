@@ -1,0 +1,26 @@
+<div class="">
+  <we-title [mytext]="'Tutti i publisher'"></we-title>
+  <div class="page_content" align="center">
+                <!-- Content -->
+                <table class="table-data table-bordered" sortable-table (sorted)="onSorted($event)" width="100%">
+                    <thead>
+                        <tr>
+                            <th sortable-column="name" sort-direction="asc">Nome</th>
+                            <th sortable-column="mail" >Email</th>
+                            <th sortable-column="iban" >Pagamenti</th>
+                            <th sortable-column="fisco" >Ragione fiscale</th>
+                        </tr>
+                    </thead>
+                    <tbody id="publishers-list">
+                    <tr *ngFor="let pub of customers">
+                      <td class="publisher-name">
+                        <a href="">{{pub.name}}</a>
+                      </td>
+                      <td>{{pub.mail}}</td>
+                      <td>{{pub.iban}}</td>
+                      <td>{{pub.fisco}}</td>
+                    </tr>
+                </table>
+                <!-- Content // End -->
+              </div>
+</div>

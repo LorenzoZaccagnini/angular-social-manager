@@ -1,0 +1,55 @@
+<div class="">
+  <div class="top_wrapper" *ngIf="proposals.length != 0">
+    <div class="inner_wrapper">
+      <div class="" *ngFor="let prop of proposals">
+        <img src="{{prop.img}}" alt="">
+      </div>
+    </div>
+    <div class="count_style">
+      <div id="add-assets-to-proposal-followers-count">
+        Numero follower: {{totalCount}}
+      </div>
+      <div id="addAssetsToProposals">
+        Crea proposta
+      </div>
+
+    </div>
+  </div>
+
+  <we-title [mytext]="'Tutti gli asset'"></we-title>
+  <div class="asset_container">
+    <div class="asset_wrapper" *ngFor="let asset of assets, let i = index" [ngClass]="{'added': asset.added}">
+      <div class="">
+        <div class="add-asset-to-proposal" (click)="addProposal(i)">
+          <i class="fa" [ngClass]="{'fa-plus': !asset.added, 'fa-check': asset.added}" aria-hidden="true"></i>
+        </div>
+        <div class="asset-edit-btn">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="asset_logo">
+        <img src="{{asset.img}}" alt="">
+      </div>
+      <div class="asset_title" align="center">
+        {{asset.title}}
+      </div>
+      <div class="asset_followers_count">
+        {{asset.follow_count}}
+      </div>
+      <div class="asset-footer-wrapper">
+        <div class="asset-social asset-Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true">
+
+  </i>Facebook
+        </div>
+        <div class="asset-view-more-btn-wrapper">
+          <div class="asset-view-more">
+            Visualizza
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

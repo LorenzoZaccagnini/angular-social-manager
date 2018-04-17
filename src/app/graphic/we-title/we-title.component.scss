@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  padding: 25px 35px 5px;
+  -webkit-font-smoothing: antialiased;
+  color: #60656c;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  .wrapper_row {
+    width: 100%;
+
+    .title {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 800;
+    }
+    }
+
+}

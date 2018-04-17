@@ -1,0 +1,22 @@
+<div class="container" align="center">
+  <div class="login_box">
+    <div class="login_box_top">
+      <div class="top_ico">
+
+      </div>
+      <div class="top_title">
+        Benvenuto
+      </div>
+      <div class="top_sub_title">
+          Loggati inserendo i tuoi dati
+      </div>
+    </div>
+    <div class="login_box_bottom">
+        <input type="text" value="Email" [(ngModel)]="user.name">
+        <input type="password" value="Password"  [(ngModel)]="user.password">
+      <input type="button" value="Login" (click)="login()">
+      <div>Dimenticato la Password?</div>
+    </div>
+
+  </div>
+</div>

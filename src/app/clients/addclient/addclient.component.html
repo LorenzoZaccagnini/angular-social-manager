@@ -1,0 +1,39 @@
+<div class="">
+  <we-title [mytext]="'Aggiungi cliente'"></we-title>
+    <div class="page_content col-md-6 col-md-offset-3" align="left">
+      <div class="input_wrapper" align="left">
+      <div class="input_inner">
+        <div class="input_label">nome cliente*</div>
+        <input id="budgetRequestedPerPost"
+        type="text"
+        placeholder="Inserire il nome del cliente da mostrare nel report">
+      </div>
+      </div>
+      <div class="input_wrapper" align="left">
+      <div class="input_inner">
+        <div class="input_label">ragione fiscale cliente*</div>
+        <input id="budgetRequestedPerPost"
+        type="text"
+        placeholder="Inserire il nome della ragione fiscale dell'agenzia">
+      </div>
+      </div>
+      <div class="input_wrapper" align="left">
+      <div class="input_inner">
+        <div class="input_label">partita iva cliente*</div>
+        <input id="budgetRequestedPerPost"
+        type="text"
+        placeholder="Inserire la partita iva del cliente">
+      </div>
+      </div>
+      <select class="input_select fat_el" name="">
+        <option value="fb">Cliente autonomo</option>
+        <option value="ig">Cliente seguito da agenzia</option>
+        <option value="ig">Cliente seguito da centro media</option>
+      </select>
+      <div class="footer_wrapper">
+        <we-line></we-line>
+        <we-button [mytext]="'Aggiungi cliente'"></we-button>
+      </div>
+    </div>
+
+</div>

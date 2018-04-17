@@ -1,0 +1,26 @@
+<div class="">
+  <we-title [mytext]="'Tutti i clienti'"></we-title>
+  <div class="page_content" align="center">
+                <!-- Content -->
+                <table class="table-data table-bordered" sortable-table (sorted)="onSorted($event)" width="100%">
+                    <thead>
+                        <tr>
+                            <th sortable-column="name" sort-direction="asc">Nome</th>
+                            <th sortable-column="fisco" >Ragione fiscale</th>
+                            <th sortable-column="piva" >Partita Iva</th>
+                            <th sortable-column="follow" >Seguito da</th>
+                        </tr>
+                    </thead>
+                    <tbody id="publishers-list">
+                    <tr *ngFor="let cli of customers">
+                      <td class="publisher-name">
+                        <a href="">{{cli.name}}</a>
+                      </td>
+                      <td>{{cli.fisco}}</td>
+                      <td>{{cli.piva}}</td>
+                      <td>{{cli.follow}}</td>
+                    </tr>
+                </table>
+                <!-- Content // End -->
+              </div>
+</div>

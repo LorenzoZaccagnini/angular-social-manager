@@ -1,0 +1,83 @@
+.create_campaign{
+ width: 100%;
+
+ textarea {
+     outline: none;
+     height: 130px;
+     max-width: 95%;
+     max-height: 400px;
+     width: 100%;
+    float: left;
+    border: none;
+    position: relative;
+    height: 65px;
+    padding: 20px 15px 5px 15px;
+ }
+
+  #page-menu {
+      width: 100%;
+      float: left;
+      background-color: rgba(0,0,0,.03);
+      margin-top: 15px;
+
+      .page-menu-element {
+    color: #60656c;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    margin: 0 20px;
+    min-width: 100px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    color: #8F8F8F;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+}
+
+.page-menu-element-active:before {
+    left: 15px;
+    right: 15px;
+}
+
+.page-menu-element:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+.page-menu-element:hover:before {
+    left: 15px;
+    right: 15px;
+}
+  }
+  .page-content-section-wrapper-with-bottom-bar {
+    padding-bottom: 30px;
+}
+
+.page-content-section-wrapper {
+    display: none;
+    float: left;
+    width: 100%;
+    padding-top: 35px;
+
+    .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.page-content-section-wrapper .input-wrapper {
+    margin-bottom: 25px;
+}
+
+
+}
+}
